@@ -6,7 +6,6 @@ export class AppController {
 
   constructor(private _AppService : AppService){}
 
-
   @Get()
   getTest(){
     return this._AppService.getHello();
