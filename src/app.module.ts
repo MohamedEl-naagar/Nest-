@@ -9,9 +9,11 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { UsersModule } from './users/users.module';
 import { AuthService } from './auth/auth.service';
 import { AuthController } from './auth/auth.controller';
+import { AuthModule } from './auth/auth.module';
+import { JwtModule } from '@nestjs/jwt';
 
 @Module({
-  imports: [UsersModule,MongooseModule.forRoot('mongodb://localhost/nest')],
+  imports: [UsersModule,AuthModule,MongooseModule.forRoot("mongodb+srv://admin:45ANZ7rNHxbjZNSn@atlascluster.nhnqhsq.mongodb.net/Nest")],
   controllers: [AppController],
   providers: [AppService]
 })

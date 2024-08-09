@@ -1,6 +1,6 @@
 import { Body, Controller, Get , Param, Post, Query, UsePipes, ValidationPipe } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { User } from 'src/schemas/user.schema';
+import { User } from 'src/users/user.schema';
 import { Model } from 'mongoose';
 import { UsersService } from './users.service';
 
